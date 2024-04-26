@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(22, 22, 22);
+    font-family: "Poppins", sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    position: relative;
+    height: 90%;
+    width: 80%;
+    /* border: 1px solid #fff; */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 10px 25px -8px rgb(0, 0, 0);
+}
+
+header::before{
+   content: '';
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background: url(img/money\ heist1.jpg) no-repeat center center/cover ;
+   opacity: .7;
+   z-index: -1;
+
+}
+header::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, transparent, rgb(0, 0, 0)) ;
+    z-index: -1;
+ }
+
+header video{
+    position:absolute;
+    width: 140%;
+    height: 230%;
+    top: -70%;
+    z-index: -1 ;
+
+ }
+
+ header nav{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+ }
+ header nav .logo_ul {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav .logo_ul img{
+
+  
+    width: 70px;
+}
+
+header nav .logo_ul ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+header nav .logo_ul ul li{
+    padding: 3px 20px;
+}
+ 
+header nav .logo_ul ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    transition: .3s linear;
+}
+
+header nav .logo_ul ul li a:hover{
+    
+    color: rgb(255, 255, 255, .7);
+    
+}
+ 
+header nav .search_user{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header nav .search_user input{
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color:rgb(255, 255, 255, .3);
+    color: #fff;
+    margin-right: 10px;
+    
+    
+}
+
+header nav .search_user input::placeholder{
+  
+    color: #fff;
+    
+    
+}
+
+header nav .search_user img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    
+    
+}
+header nav .search_user .search{
+    position: absolute;
+    width: 320px;
+    height: 260px;
+    /* border: 1px solid #fff; */
+    right: 0%;
+    top: 40px;
+    z-index: 100  ;
+    overflow: auto;
+    
+    
+}
+
+header nav .search_user .search::-webkit-scrollbar{
+   width: 5px;
+   background-color: rgb(255, 255, 255, .3);
+   border-radius: 5px;
+   visibility: hidden;
+    
+}
+
+header nav .search_user .search::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: rgb(255, 255, 255, .4);
+    border-radius: 5px;
+    visibility: hidden;
+     
+ }
+ header nav .search_user .search:hover::-webkit-scrollbar-thumb{
+   
+    visibility: visible;
+     
+ }
+ header nav .search_user .search:hover::-webkit-scrollbar{
+   
+    visibility: visible;
+     
+ }
+
+header nav .search_user .card{
+    position: relative;
+    width: inherit-1;
+    height: 60px;
+    /* border: 1px solid #fff; */
+    z-index: 100  ;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 3px 0px;
+    text-decoration: none;
+}
+header nav .search_user .card::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255, .1) ;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+ 
+ }
+ header nav .search_user .card img{
+    width: 50px;
+    height: 100%;
+    border-radius: 3px;
+    margin-left: 8px;
+ }
+ header nav .search_user .card .cont{
+   margin-left: 10px;
+   color: #fff;
+ }
+ header nav .search_user .card .cont h3{
+    font-size: 15px;
+    line-height: 25px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px;
+  }
+  header nav .search_user .card .cont p{
+    font-size: 10px;
+    color: rgb(255, 255, 255, .7);
+    
+  }
+  header nav .search_user .card .cont span{
+    font-size: 10px;
+    background-color: yellow;
+    color: black;
+    padding: 0px 4px;
+    margin: 0px 5px 0px 5px;
+    font-weight: 500px;
+    
+  }
+
+  header .content{
+    position: relative;
+    color: #fff;
+    margin-top: 16%;
+    padding-left: 6%;
+    
+  }
+
+  header .content h1{
+    
+    font-size: 50px;
+  }
+  header .content p{
+    
+    font-size: 11px;
+    width: 500px;
+    word-break: break-all;
+  }
+
+  header .content .details{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  header .content .details h6{
+    color: rgb(255, 255, 255, .7);
+    font-size: 10px;
+    margin-right: 10px;
+  }
+
+  header .content .details h5{
+    color: greenyellow;
+    font-size: 10px;
+    margin-right: 10px;
+  }
+
+  header .content .details h4{
+    color: #fff;
+    font-size: 10px;
+    margin-right: 10px;
+  }
+  header .content .details h3 span{
+    font-size: 10px;
+    background-color: yellow;
+    color: black;
+    padding: 0px 4px;
+    margin: 0px 5px 0px 5px;
+    font-weight: 500px;
+    border-radius: 3px;
+  }
+
+  header .content .details h3 {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    margin-right: 10px;
+  }
+
+  header .content .details h3 i{
+    margin-right: 5px;
+  }
+
+  header .content  .btns{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  header .content  .btns a{
+  padding: 15px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #505051, #656566);
+  border-radius: 5px;
+  color: rgb(255, 255, 255, .7);
+  text-decoration: none;
+  transition: .3s;
+  }
+
+  header .content  .btns a:hover{
+    background: linear-gradient(90deg,#383838, #000);
+    }
+
+  header .content  .btns #Alwatch{
+   
+    margin-left: 15px ;
+    }
+
+header section{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 0px 50px;
+    bottom: 20px;
+    color: #fff;
+}
+
+header section .cards{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid #fff; */
+    margin-top: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    
+}
+
+header section .cards::-webkit-scrollbar{
+   display: none;
+    
+}
+
+header section .cards .card{
+    position: relative;
+    min-width: 12%;
+    height: 87%;
+    /* border: 1px solid #fff; */
+    border-radius: 8px;
+    margin-right: 10px;
+    background: #000;
+    transition: .3s linear;
+}
+
+
+
+header section .cards .card .poster{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+}
+
+header section .cards .card:hover{
+    
+    min-width: 22%;
+    overflow: hidden;
+}
+
+header section .cards .card .restcard{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    opacity: 0;
+    transition: 1s linear;
+    overflow: hidden;
+}
+
+header section .cards .card .restcard img{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    z-index:-1;
+    
+}
+
+header section .cards .card .restcard::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent, rgb(0, 0, 0)) ;
+    z-index: 1;
+ }
+
+ header section .cards .card .restcard .descrip{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    padding: 0px 20px;
+    z-index: 2;
+}
+
+header section .cards .card .restcard .descrip .sub{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header section .cards .card .restcard .descrip .sub p{
+    font-size: 11px;
+    color: rgb(255, 255, 255, .7);
+    
+}
+
+header section .cards .card .restcard .descrip .sub h3 span{
+    background-color: yellow;
+    color: #000;
+    font-size: 10px;
+    font-weight: 400;
+    margin-right: 5px;
+    border-radius: 2px;
+    
+}
+header section .cards .card .restcard .descrip .sub h3{
+    font-size: 10px;
+    color: #fff;
+    
+}
+
+header section .cards .card:hover .restcard {
+    opacity: 1;
+    
+}
+header section  .bi-chevron-right , .bi-chevron-left{
+    position:absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    color: #fff;
+    background-color: rgb(255, 255, 255, .4);
+    left:3%;
+    border-radius: 20px;
+    visibility: hidden;
+    justify-content: center;
+    z-index: 999;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header section .bi-chevron-right {
+    left: unset;
+    right: 3%;
+}
+
+header section:hover  .bi-chevron-left{
+visibility: visible;
+}
+header section:hover .bi-chevron-right{
+visibility: visible;
+    }
+
+    header .lform{
+        margin-top: 10%;
+        margin-left: 20%;
+        color:rgb(255, 255, 255, .7);
+
+    }
+    header .lform input{
+        height: 30px;
+        width: 300px;
+        background-color: rgb(255, 255, 255, .3);
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        padding: 0px 10px;
+        font-size: 20px;
+        color: #fff;
+    }
+   
+
+    header .oform{
+        align-items: center;
+        height: 320px;
+        width: 500px;
+        margin-top: 22%;
+        margin-left: 30%;
+        border-radius: 10px;
+        background: linear-gradient(180deg, #383838,#1f1f1f);
+        opacity: .7;
+        color: #fff;
+        
+        
+    }
+    header .oform p{
+      font-size: 25px;
+      font-weight: 500;
+      text-align: center;
+      
+      
+    }
+    header .lform button{
+        position: relative;
+        padding: 12px 12px;
+        margin-left: 130px;
+        margin-top: 25px;
+        font-size: 15px;
+        font-weight: 500;
+        background: linear-gradient(90deg,#885f5f, rgb(90, 43, 43));
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        transition: .3s;
+        border: none;
+        outline: none;
+        }
+
+        header .lform button:hover{
+            background: linear-gradient(90deg,#f96767, rgb(243, 7, 7));
+            }
